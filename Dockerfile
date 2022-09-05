@@ -1,4 +1,4 @@
-ARG BASE_IMAGE
+ARG BASE_IMAGE=alpine:latest
 FROM ${BASE_IMAGE}
 
 COPY "files/start.sh" "/usr/libexec/start.sh"
