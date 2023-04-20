@@ -1,4 +1,3 @@
-version: "3.9"
 services:
   playground:
     container_name: playground
@@ -7,7 +6,10 @@ services:
       dockerfile: Dockerfile
       args:
         BASE_IMAGE: opensuse/tumbleweed:latest
+    privileged: true
+    stdin_open: true
+    tty: true
     #volumes:
     #  - /etc/containers/playground/setup.sh:/usr/libexec/setup.sh:ro
-    #  - /etc/containers/playground/runloop.sh:/usr/libexec/runloop.sh:ro
+    #  - /etc/containers/playground/main.sh:/usr/libexec/main.sh:ro
     #  - /var/containers/playground:/mnt:rw
