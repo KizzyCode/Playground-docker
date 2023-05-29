@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile
       args:
         BASE_IMAGE: opensuse/tumbleweed:latest
+    stop_signal: SIGKILL
     privileged: true
     stdin_open: true
     tty: true
