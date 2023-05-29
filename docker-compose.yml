@@ -10,6 +10,7 @@ services:
     privileged: true
     stdin_open: true
     tty: true
+    # Mount your custom hooks and directories here:
     #volumes:
     #  - /etc/containers/playground/setup.sh:/usr/libexec/setup.sh:ro
     #  - /etc/containers/playground/main.sh:/usr/libexec/main.sh:ro
